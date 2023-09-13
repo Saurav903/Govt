@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../style/first.module.css";
-import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import StatsCard from "../utils/utilis";
 import Crousel from "../Components/Crousel";
 import Accord from "../Components/Accord";
@@ -171,6 +171,17 @@ const FirstPage = () => {
         <Heading textAlign={"center"} className={style.underlineanimation} marginTop={"70px"} marginBottom={"50px"}>POLICIES</Heading>
 
         <DropDown/>
+      </div>
+
+      <div className={style.videosall}>
+        <Card width={"80%"} margin={"auto"}>
+          <CardBody display={"grid"} gridTemplateColumns={"repeat(2,1fr)"} gap="20px">
+          <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/azoyJ97I52E"></iframe>
+          <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/yH_oH5OUwWk"></iframe>
+          <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/vgI8KpNSjeo"></iframe>
+          <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/pEX2_kVs52o"></iframe>
+          </CardBody>
+        </Card>
       </div>
     </div>
   );
