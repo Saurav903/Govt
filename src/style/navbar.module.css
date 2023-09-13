@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+.main{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(243, 238, 238, 0.9);
+    z-index: 1;
+    /* background-color: rgba(172, 172, 172, 0.3);  
+    overflow: hidden; */
+}
+
+.right{
+    /* border: 1px solid black; */
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 60px;
+}
+
+
+.left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left>img{
+    width: 50%;
+}
+
+.text{
+    font-size: 50px;
+    font-family:Bangers;
+
+}
+
+.right>:nth-child(1):hover{
+    text-decoration: underline;
+}
+
+.right>:nth-child(2):hover{
+    text-decoration: underline;
+}
+
