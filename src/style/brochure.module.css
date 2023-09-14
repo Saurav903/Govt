@@ -1,0 +1,41 @@
+underlineanimation {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .underlineanimation:hover {
+    color: #000;
+  }
+  
+  .underlineanimation::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .underlineanimation:hover::before {
+    transform: scaleX(0.5);
+  }
+
+
+  .lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  .lists>ol{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+  }

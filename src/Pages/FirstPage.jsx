@@ -6,6 +6,9 @@ import Crousel from "../Components/Crousel";
 import Accord from "../Components/Accord";
 import Innovation from "../Components/Innovation";
 import DropDown from "../Components/DropDown";
+import Brochures from "../Components/Brochures";
+import Team from "../Components/Team";
+import Contact from "../Components/Contact";
 
 const FirstPage = () => {
   return (
@@ -174,7 +177,7 @@ const FirstPage = () => {
       </div>
 
       <div className={style.videosall}>
-        <Card width={"80%"} margin={"auto"}>
+        <Card width={"85%"} margin={"auto"}>
           <CardBody display={"grid"} gridTemplateColumns={"repeat(2,1fr)"} gap="20px">
           <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/azoyJ97I52E"></iframe>
           <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/yH_oH5OUwWk"></iframe>
@@ -183,6 +186,27 @@ const FirstPage = () => {
           </CardBody>
         </Card>
       </div>
+      <div>
+        <Box>
+          <Heading textAlign={"center"} className={style.underlineanimation} marginTop={"90px"} marginBottom={"50px"}>BROCHURES <Text as={"span"} color={"orange.400"}>
+            AND
+          </Text> REPORTS</Heading>
+        </Box>  
+        <Brochures/>
+      </div>
+
+      <Box marginBottom={"50px"}>
+            <Heading textAlign={"center"} className={style.underlineanimation} marginTop={"90px"} marginBottom={"50px"}>TEAM</Heading>
+
+            <Team/>
+      </Box>
+
+      <Box>
+
+        <Heading textAlign={"center"} className={style.underlineanimation} marginTop={"90px"} >CONTACT US</Heading>
+
+        <Contact/>
+      </Box>
     </div>
   );
 };

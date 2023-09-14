@@ -1,0 +1,19 @@
+.teams>div{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.teams>div>img{
+    width: 100%;
+    margin: auto;
+}
+
+.teams>div>p{
+    font-size: small;
+}
